@@ -1,10 +1,30 @@
 import layoutStyle from '../../styles/Layout.module.scss'
-export default function Layout({children}: any) {
+
+import classNames from "classnames";
+
+const name = 'Layout Name'
+
+export const siteTitle = 'Khwoo next js'
+
+interface LayoutParam {
+    children?: any;
+    home?: boolean;
+    title?: string;
+}
+
+export default function Layout(param: LayoutParam) {
     return (
         <>
-            {layoutStyle.LayoutContainer}
-            <div className={layoutStyle.LayoutContainer}>{children}</div>
+            <div className={layoutStyle.LayoutContainer}>
+                <div className={layoutStyle.header}>
+                    <span className={classNames({
+                        [layoutStyle.homePage]: param.home,
+                        [layoutStyle.firstPostPage]: !param.home
+                    })}>Title: {param.title}</span>
+                    <span>{name}</span>
+                </div>
+                <div className={layoutStyle.children}>{param.children}</div>
+            </div>
         </>
-
     )
 }

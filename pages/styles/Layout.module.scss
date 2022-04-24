@@ -1,9 +1,33 @@
 .LayoutContainer {
-  padding: 10px;
-  font-size: 30px;
+  width: 750px;
+  margin: auto;
+  min-height: 100vh;
+  background-color: #fff;
+  border: 1px solid #eee;
+
+  .header {
+    background-color: #eee;
+    min-height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .children {
+    padding: 10px;
+  }
 
   .subTitle {
     font-weight: bold;
+    color: red!important;
+  }
+
+  .homePage {
+    color: red;
+  }
+
+  .firstPostPage {
+    color: blue;
   }
 
 }
