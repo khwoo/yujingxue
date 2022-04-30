@@ -1,7 +1,12 @@
 import indexStyle from "@styles/index.module.scss"
 import classNames from "classnames"
-import styled from "styled-components";
-import Image from "next/image";
+import styled from "styled-components"
+import Image from "next/image"
+import {Swiper, SwiperSlide} from "swiper/react"
+import "swiper/css"
+import {Navigation, Pagination} from "swiper"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
 
 export default function Home() {
     return (
@@ -23,6 +28,29 @@ export default function Home() {
                     </div>
                 </div>
             </IndexHeader>
+            <Swiper navigation={{nextEl: '._swiper-button-next', prevEl: '._swiper-button-prev'}}
+                    pagination={{ clickable: true, el: '._swiper-pagination', type: 'fraction' }}
+                    modules={[Navigation, Pagination]}
+                    className={indexStyle.swiper}>
+                <SwiperSlide>
+                    <Image src={"/images/temp/banner_01.png"} layout={"fill"}/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src={"/images/temp/banner_02.png"} layout={"fill"}/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src={"/images/temp/banner_01.png"} layout={"fill"}/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src={"/images/temp/banner_02.png"} layout={"fill"}/>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Image src={"/images/temp/banner_01.png"} layout={"fill"}/>
+                </SwiperSlide>
+                <div className={"_swiper-pagination"}></div>
+                <div className={"_swiper-button-prev"}></div>
+                <div className={"_swiper-button-next"}></div>
+            </Swiper>
         </div>
     )
 }
@@ -33,7 +61,7 @@ const IndexHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   position: relative;
-  
+
   :before {
     content: '';
     width: 1000%;
@@ -76,6 +104,9 @@ const Search = styled.div`
     outline: none;
     height: 20px;
     width: 200px;
-    
+
+    ::placeholder {
+      color: #717377;
+    }
   }
 `

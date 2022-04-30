@@ -8,4 +8,57 @@ body {
   font-family: Roboto,regular;
   color: #212123;
 }
+._swiper-button-next, ._swiper-button-prev {
+  width: 14px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 11;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100% 100%;
+}
+._swiper-button-next {
+  right: 37.5px;
+  background-image: url("/images/next-01.png");
+}
+._swiper-button-prev {
+  left: 37.5px;
+  background-image: url("/images/prev-01.png");
+}
 
+._swiper-button-next,._swiper-button-prev:hover {
+  cursor: pointer;
+}
+._swiper-pagination {
+  width: 45px!important;
+  position: absolute;
+  left: inherit!important;
+  right: 20px!important;
+  bottom: 20px!important;
+  background-color: rgba(38, 35, 35, 0.3);
+  z-index: 11;
+  border-radius: 3px;
+  font-size: 12px!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 0;
+
+  color: #FFFFFF!important;
+  .swiper-pagination-current {
+    color: #fff!important;
+    margin: 0 1px 0 0;
+    font-weight: bold!important;
+  }
+  .swiper-pagination-total {
+    margin: 0 0 0 1px;
+    color: #fff!important;
+  }
+}
+._swiper-pagination:after {
+  content: '+';
+  margin: 0 0 0 3.5px;
+}
