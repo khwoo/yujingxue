@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import Head from 'next/head'
-import Layout from "./components/layout/layout";
+
 export default function Home() {
     return (
         <>
-            <Layout home title={"home"}>
                 <Head>
                     <title>Create Next App Index!</title>
                 </Head>
@@ -24,7 +23,6 @@ export default function Home() {
                         </div>
                     </Link>
                 </div>
-            </Layout>
         </>
     )
 }

@@ -1,0 +1,30 @@
+.container {
+  background-color: #F5F5F6;
+}
+
+.view {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: #717377;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.buttons {
+  color: #717377;
+  font-size: 14px;
+  font-weight: 400;
+
+  > span:hover {
+    cursor: pointer;
+  }
+}
+
+.right {
+
+}

@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Head from "next/head";
 import Script from "next/script";
-import Layout, {siteTitle} from "../components/layout/layout";
+import Layout, {siteTitle} from "@components/layout/layout";
 import layoutStyle from '../styles/Layout.module.scss'
+
 export default function FirstPost({num, data, datastr}: any) {
+
     return (
         <>
             <Layout>

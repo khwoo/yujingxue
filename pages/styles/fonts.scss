@@ -1,0 +1,44 @@
+
+@font-face {
+  font-family: regular;
+  // 해당하는 포멧 설정 찾아서 세팅
+  src: url("/font/NotoSansKR-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: bold;
+  // 해당하는 포멧 설정 찾아서 세팅
+  src: url("/font/NotoSansKR-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: medium;
+  // 해당하는 포멧 설정 찾아서 세팅
+  src: url("/font/NotoSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: roboto;
+  // 해당하는 포멧 설정 찾아서 세팅
+  src: url("/font/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: roboto-bold;
+  // 해당하는 포멧 설정 찾아서 세팅
+  src: url("/font/Roboto-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: cafe24-shining-star;
+  // 해당하는 포멧 설정 찾아서 세팅
+  src: url("/font/Cafe24Shiningstar.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
