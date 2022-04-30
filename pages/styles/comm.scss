@@ -1,3 +1,11 @@
+
+.site-Layout {
+  width: 1060px;
+  min-width: 1060px;
+  max-width: 1060px;
+  margin: auto;
+}
+
 .display-flex {
   display: flex;
 }
@@ -5,11 +13,8 @@
   align-items: center;
 }
 
-.site-Layout {
-  width: 1060px;
-  min-width: 1060px;
-  max-width: 1060px;
-  margin: auto;
+.cursor-pointer {
+  cursor: pointer;
 }
 
 /*width*/
@@ -25,6 +30,9 @@
 }
 .margin-left-25 {
   margin-left: 25px;
+}
+.margin-left-30 {
+  margin-left: 30px;
 }
 .margin-right-25 {
   margin-right: 25px;

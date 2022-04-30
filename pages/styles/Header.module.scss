@@ -16,10 +16,11 @@
 }
 
 .buttons {
-  color: #717377;
   font-size: 14px;
   font-weight: 400;
-
+  span {
+    color: #717377;
+  }
   > span:hover {
     cursor: pointer;
   }

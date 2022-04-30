@@ -1,0 +1,14 @@
+.container {
+}
+.menu {
+  font-size: 18px;
+  > span {
+    margin: 0 30px 0 0;
+  }
+  > span:hover {
+    cursor: pointer;
+  }
+  > span:last-child {
+    margin: 0;
+  }
+}

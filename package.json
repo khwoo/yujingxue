@@ -15,5 +15,8 @@
     "@types/node": "^17.0.25",
     "sass": "^1.50.1",
     "classnames": "^2.3.1"
+  },
+  "devDependencies": {
+    "styled-components": "^5.3.5"
   }
 }

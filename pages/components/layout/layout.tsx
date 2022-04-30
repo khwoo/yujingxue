@@ -17,8 +17,8 @@ export default function Layout(param: LayoutParam) {
     return (
         <>
             <Header/>
-            <div className={layoutStyle.LayoutContainer}>
-                1111
+            <div className={"site-Layout"}>
+                {param.children}
             </div>
             {/*<div className={layoutStyle.LayoutContainer}>*/}
             {/*    <div className={layoutStyle.header}>*/}
@@ -28,7 +28,7 @@ export default function Layout(param: LayoutParam) {
             {/*        })}>Title: {param.title}</span>*/}
             {/*        <span>{name}</span>*/}
             {/*    </div>*/}
-            {/*    <div className={layoutStyle.children}>{param.children}</div>*/}
+
             {/*</div>*/}
         </>
     )
