@@ -16,7 +16,6 @@ export default function Home() {
                     <span>스토어1</span>
                     <span>상품2</span>
                     <span>투어패스3</span>
-                    <span>여행정보</span>
                     <span>여행정보4</span>
                     <span>이벤트/공지사항</span>
                 </div>
