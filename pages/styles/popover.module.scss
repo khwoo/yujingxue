@@ -1,0 +1,27 @@
+.container {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  min-height: 30px;
+  background-color: #fff;
+  display: none;
+  border: 1px solid #ab9898;
+  border-radius: 5px;
+
+  input {
+    width: 330px;
+    border: none;
+    outline: none;
+  }
+
+  button {
+    margin-right: 10px;
+  }
+
+  span {
+    color: aquamarine;
+  }
+}

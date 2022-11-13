@@ -26,47 +26,47 @@
     ],
     "sites": [
       {
-        "siteNm": "조폐공사 GitLab",
+        "siteNm": "GitLab",
         "siteUrl": "http://10.10.120.132:8090",
         "siteDesc": "-"
       },
       {
-        "siteNm": "조폐공사 Nexus",
+        "siteNm": "Nexus",
         "siteUrl": "http://10.10.120.132:8081",
         "siteDesc": "-"
       },
       {
-        "siteNm": "조폐공사 SonarQube",
+        "siteNm": "SonarQube",
         "siteUrl": "http://10.10.120.132:9000",
         "siteDesc": "-"
       },
       {
-        "siteNm": "조폐공사 개발 Swagger",
+        "siteNm": "개발 Swagger",
         "siteUrl": "http://10.10.120.123:10909/doc.html",
         "siteDesc": "-"
       },
       {
-        "siteNm": "조폐공사 개발 어드민 portal",
+        "siteNm": "개발 어드민 portal",
         "siteUrl": "https://lopydev.komscochak.com:28080",
         "siteDesc": "-"
       },
       {
-        "siteNm": "조폐공사 개발 어드민 ba",
+        "siteNm": "개발 어드민 ba",
         "siteUrl": "https://lopydev.komscochak.com:28380",
         "siteDesc": "-"
       },
       {
-        "siteNm": "조폐공사 원투씨엠 프로그램 목록",
+        "siteNm": "원투씨엠 프로그램 목록",
         "siteUrl": "https://docs.google.com/spreadsheets/d/1TvFY25kb91eAbsmcvQkHxjOWpyuMXw8l/edit?usp=sharing&ou",
         "siteDesc": "-"
       },
       {
-        "siteNm": "조폐공사 DB 단어사전",
+        "siteNm": "DB 단어사전",
         "siteUrl": "https://docs.google.com/spreadsheets/d/1cVDB3KAPpeRse1JVFDuuG7ChOAnXFDENZ5yvUWiju6k/edit?usp=sharing",
         "siteDesc": "-"
       },
       {
-        "siteNm": "조폐공사 코드 정의서 - 지역제외",
+        "siteNm": "코드 정의서 - 지역제외",
         "siteUrl": "https://docs.google.com/spreadsheets/d/1pm694mgm0bH6_CYwGQUaMQVAO00hQ5wWyU6U9j2kQe4/edit?usp=sharing",
         "siteDesc": "-"
       }
