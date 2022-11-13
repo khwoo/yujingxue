@@ -13,58 +13,62 @@ export default function Home() {
 
     function siteClickAction(siteUrl: string) {
         window.open(siteUrl)
-        console.log(siteUrl)
     }
 
     return (
         <div className={indexStyle.container}>
             <IndexHeader>
                 <div className={indexStyle.menu}>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th style={{width: "300px"}}>
-                                    사이트 명
-                                </th>
-                                <th>
-                                    사이트 URL
-                                </th>
-                                <th style={{width: "300px"}}>
-                                    사이트 설명
-                                </th>
-                            </tr>
-                            {
-                                siteInfo.length > 0 ? siteInfo.map((item, index) => {
-                                        return (
-                                            <React.Fragment key={index}>
-                                                <tr className={indexStyle.data_tr}>
-                                                    <td>
-                                                        <div onClick={siteClickAction.bind(this, item.siteUrl)}>{item.siteNm}</div>
-                                                    </td>
-                                                    <td>
-                                                        <div onClick={siteClickAction.bind(this, item.siteUrl)} className={indexStyle.siteUrl}>{item.siteUrl}</div>
-                                                    </td>
-                                                    <td style={{textAlign: "center"}}>
-                                                        {item.siteDesc}
-                                                    </td>
-                                                </tr>
-                                            </React.Fragment>
-                                        )
-                                    })
-                                    : <tr><td style={{textAlign:"center", fontWeight: "500"}} colSpan={3}>없음</td></tr>
-                            }
-                        </tbody>
-                    </table>
-                </div>
+                    {
+                        siteInfo.map((item, index) => {
+                            return (
+                                <React.Fragment key={index}>
+                                    <div className={indexStyle.categoryContainer}>
+                                        <div className={indexStyle.categoryNm}>
+                                            {item.categoryNm}
+                                        </div>
 
-                {/*<div className={classNames("display-flex", "align-items-center")}>*/}
-                {/*    <Search>*/}
-                {/*        <input type={"text"} placeholder={"동성로 상품 투어 검색"}></input>*/}
-                {/*    </Search>*/}
-                {/*    <div className={classNames("margin-left-30", "cursor-pointer")}>*/}
-                {/*        <Image src={"/images/icon-cart.png"} width={24} height={24}/>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+                                        <table>
+                                            <tbody>
+                                            <tr>
+                                                <th style={{width: "300px"}}>
+                                                    사이트 명
+                                                </th>
+                                                <th>
+                                                    사이트 URL
+                                                </th>
+                                                <th style={{width: "300px"}}>
+                                                    사이트 설명
+                                                </th>
+                                            </tr>
+                                            {
+                                                item.sites.length > 0 ? item.sites.map((childItem, childIndex) => {
+                                                        return (
+                                                            <React.Fragment key={childIndex}>
+                                                                <tr className={indexStyle.data_tr}>
+                                                                    <td>
+                                                                        <div onClick={siteClickAction.bind(this, childItem.siteUrl)}>{childItem.siteNm}</div>
+                                                                    </td>
+                                                                    <td>
+                                                                        <div onClick={siteClickAction.bind(this, childItem.siteUrl)} className={indexStyle.siteUrl}>{childItem.siteUrl}</div>
+                                                                    </td>
+                                                                    <td style={{textAlign: "center"}}>
+                                                                        {childItem.siteDesc}
+                                                                    </td>
+                                                                </tr>
+                                                            </React.Fragment>
+                                                        )
+                                                    })
+                                                    : <tr><td style={{textAlign:"center", fontWeight: "500"}} colSpan={3}>없음</td></tr>
+                                            }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </React.Fragment>
+                            )
+                        })
+                    }
+                </div>
             </IndexHeader>
         </div>
     )

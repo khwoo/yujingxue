@@ -2,6 +2,22 @@
 }
 .menu {
   font-size: 16px;
+
+  .categoryContainer {
+    margin: 0 0 50px 0;
+
+    .categoryNm {
+      height: 40px;
+      line-height: 40px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      background-color: #212123;
+      color: #fff;
+    }
+  }
+
+
   table {
     width: 100%;
     border: 1px solid #ab9898;
