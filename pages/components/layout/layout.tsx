@@ -20,16 +20,6 @@ export default function Layout(param: LayoutParam) {
             <div className={"site-Layout"}>
                 {param.children}
             </div>
-            {/*<div className={layoutStyle.LayoutContainer}>*/}
-            {/*    <div className={layoutStyle.header}>*/}
-            {/*        <span className={classNames({*/}
-            {/*            [layoutStyle.homePage]: param.home,*/}
-            {/*            [layoutStyle.firstPostPage]: !param.home*/}
-            {/*        })}>Title: {param.title}</span>*/}
-            {/*        <span>{name}</span>*/}
-            {/*    </div>*/}
-
-            {/*</div>*/}
         </>
     )
 }

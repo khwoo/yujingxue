@@ -1,0 +1,37 @@
+[
+  {
+    "siteNm": "네이버",
+    "siteUrl": "https://www.naver.com",
+    "siteDesc": "-"
+  },
+  {
+    "siteNm": "조폐공사 GitLab",
+    "siteUrl": "http://10.10.120.132:8090",
+    "siteDesc": "-"
+  },
+  {
+    "siteNm": "조폐공사 Nexus",
+    "siteUrl": "http://10.10.120.132:8081",
+    "siteDesc": "-"
+  },
+  {
+    "siteNm": "조폐공사 SonarQube",
+    "siteUrl": "http://10.10.120.132:9000",
+    "siteDesc": "-"
+  },
+  {
+    "siteNm": "조폐공사 개발 Swagger",
+    "siteUrl": "http://10.10.120.123:10909/doc.html",
+    "siteDesc": "-"
+  },
+  {
+    "siteNm": "조폐공사 개발 어드민 portal",
+    "siteUrl": "https://lopydev.komscochak.com:28080",
+    "siteDesc": "-"
+  },
+  {
+    "siteNm": "조폐공사 개발 어드민 ba",
+    "siteUrl": "https://lopydev.komscochak.com:28380",
+    "siteDesc": "-"
+  }
+]

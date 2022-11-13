@@ -1,31 +1,15 @@
 .container {
-  background-color: #F5F5F6;
-}
-
-.view {
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.title {
-  color: #717377;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.buttons {
-  font-size: 14px;
-  font-weight: 400;
-  span {
-    color: #717377;
+  width: 1060px;
+  height: 50px;
+  line-height: 50px;
+  background-color: blanchedalmond;
+  border: 2px solid #eee;
+  border-top: none;
+  margin: auto;
+  text-align: center;
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #212123;
   }
-  > span:hover {
-    cursor: pointer;
-  }
-}
-
-.right {
-
 }
