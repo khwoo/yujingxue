@@ -13,7 +13,7 @@
         "siteDesc": "-"
       },
       {
-        "siteNm": "BaiDu",
+        "siteNm": "Baidu",
         "siteUrl": "https://www.baidu.com",
         "siteDesc": "-"
       }
@@ -21,6 +21,9 @@
   },
   {
     "categoryNm": "조폐공사",
+    "doc": [
+
+    ],
     "sites": [
       {
         "siteNm": "조폐공사 GitLab",
@@ -50,6 +53,21 @@
       {
         "siteNm": "조폐공사 개발 어드민 ba",
         "siteUrl": "https://lopydev.komscochak.com:28380",
+        "siteDesc": "-"
+      },
+      {
+        "siteNm": "조폐공사 원투씨엠 프로그램 목록",
+        "siteUrl": "https://docs.google.com/spreadsheets/d/1TvFY25kb91eAbsmcvQkHxjOWpyuMXw8l/edit?usp=sharing&ou",
+        "siteDesc": "-"
+      },
+      {
+        "siteNm": "조폐공사 DB 단어사전",
+        "siteUrl": "https://docs.google.com/spreadsheets/d/1cVDB3KAPpeRse1JVFDuuG7ChOAnXFDENZ5yvUWiju6k/edit?usp=sharing",
+        "siteDesc": "-"
+      },
+      {
+        "siteNm": "조폐공사 코드 정의서 - 지역제외",
+        "siteUrl": "https://docs.google.com/spreadsheets/d/1pm694mgm0bH6_CYwGQUaMQVAO00hQ5wWyU6U9j2kQe4/edit?usp=sharing",
         "siteDesc": "-"
       }
     ]
