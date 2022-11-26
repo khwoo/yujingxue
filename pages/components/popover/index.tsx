@@ -19,7 +19,6 @@ export default function Popover(param: PopoverParam) {
     const tickRef = useRef(null)
 
      const closeTimeAction = () => {
-        console.log(tickRef.current)
          setCloseTime((data) => {
              // 받기
              if(data === 1) {
