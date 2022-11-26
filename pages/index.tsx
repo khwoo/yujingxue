@@ -63,6 +63,11 @@ export default function Home() {
                                                                         </div>
                                                                     </td>
                                                                     <td>
+
+                                                                        {/* ---------------------------------
+                                                                        - 팝업 노출
+                                                                        - [2022년11월26일 09:20:14]
+                                                                        ---------------------------------  */}
                                                                         <Popover select={selectSite} index={`${index}${childIndex}`} value={childItem.siteUrl} >
                                                                             <div onMouseOver={siteUrlMouseOverAction.bind(this, index, childIndex, childItem)} onClick={siteClickAction.bind(this, childItem.siteUrl)} className={indexStyle.siteUrl}>
                                                                                 {childItem.siteUrl}

@@ -1,6 +1,5 @@
 import popoverStyle from '@styles/popover.module.scss'
 import {useEffect, useRef, useState} from "react";
-import {clearInterval} from "timers";
 
 interface PopoverParam {
     children?: any;
@@ -8,27 +7,50 @@ interface PopoverParam {
     value?: string;
     select: string;
 }
+
+type Fnc = (body: any) => void;
+
 export default function Popover(param: PopoverParam) {
 
     const [show, setShow] = useState(false)
     const [closeTime, setCloseTime] = useState(0);
 
-    useEffect(() => {
-        if(closeTime >= 1) {
-            setCloseTime(closeTime - 1)
-            if(closeTime <= 1) {
-                setShow(false)
-            }
-        }
-    }, [closeTime])
+    const inputRef = useRef(null)
+    const tickRef = useRef(null)
+
+     const closeTimeAction = () => {
+        console.log(tickRef.current)
+         setCloseTime((data) => {
+             // 받기
+             if(data === 1) {
+                 closeAction()
+             }
+             return data - 1
+         })
+     }
+
+     useEffect(() => {
+         if(show) {
+             inputRef.current.focus()
+         }
+     }, [show])
 
     useEffect(() => {
         if(param.select && param.select === param.index) {
             setShow(true)
             setCloseTime(5)
+            tickRef.current = setInterval(() => {
+                closeTimeAction()
+            }, 1000);
         } else {
             setShow(false)
-            setCloseTime(0)
+            setCloseTime(5)
+        }
+
+        return () => {
+            if(tickRef.current) {
+                clearInterval(tickRef.current)
+            }
         }
 
     }, [param])
@@ -40,6 +62,9 @@ export default function Popover(param: PopoverParam) {
 
     // 받기
     function closeAction() {
+        if(tickRef.current) {
+            clearInterval(tickRef.current)
+        }
         setShow(false)
     }
 
@@ -47,11 +72,11 @@ export default function Popover(param: PopoverParam) {
         <>
             {
                 show ? (
-                    <div style={{display: "block"}} className={popoverStyle.container}>
-                        <input defaultValue={param.value}/>
-                        <button onClick={clickAction}>이동</button>
-                        <button onClick={closeAction}>받기</button>
-                        <span>{closeTime}</span>
+                    <div style={{display: "flex"}} className={popoverStyle.container}>
+                            <input ref={inputRef} defaultValue={param.value}/>
+                            <button onClick={clickAction}>이동</button>
+                            <button onClick={closeAction}>받기</button>
+                            <span>{closeTime}</span>
                     </div>
                 ) : ""
             }

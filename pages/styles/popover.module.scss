@@ -5,16 +5,20 @@
   right: 0;
   margin: auto;
   width: 500px;
-  min-height: 30px;
+  height: 100%;
   background-color: #fff;
   display: none;
-  border: 1px solid #ab9898;
-  border-radius: 5px;
-
+  padding: 0!important;
+  align-items: center;
+  justify-content: space-around;
   input {
     width: 330px;
     border: none;
     outline: none;
+  }
+
+  > div {
+    padding: 0!important;
   }
 
   button {
@@ -22,6 +26,6 @@
   }
 
   span {
-    color: aquamarine;
+    color : #f7b363;
   }
 }
