@@ -3,6 +3,11 @@
     "categoryNm": "검색",
     "sites": [
       {
+        "siteNm": "Bing",
+        "siteUrl": "https://www.bing.com",
+        "siteDesc": "-"
+      },
+      {
         "siteNm": "Naver",
         "siteUrl": "https://www.naver.com",
         "siteDesc": "-"
