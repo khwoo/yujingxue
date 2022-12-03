@@ -8,5 +8,8 @@ module.exports = {
     },
     compiler: {
         styledComponents: true
+    },
+    env: {
+        customValue: 'khwoo'
     }
 }
