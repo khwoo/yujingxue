@@ -6,6 +6,7 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 import React, {useEffect, useState} from "react"
 import Popover from "@components/popover";
+import WordDictionary from "@components/dictionary/word";
 
 export default function Home() {
 
@@ -92,6 +93,10 @@ export default function Home() {
                     }
                 </div>
             </IndexHeader>
+
+            <div>
+                <WordDictionary></WordDictionary>
+            </div>
         </div>
     )
 }
@@ -100,16 +105,6 @@ export default function Home() {
 
 
 const IndexHeader = styled.div`
-  height: 85px;
 
-  :before {
-    content: '';
-    width: 1000%;
-    position: absolute;
-    height: 1px;
-    background-color: blanchedalmond;
-    top: 0;
-    left: -500%;
-  }
 `
 

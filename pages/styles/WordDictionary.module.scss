@@ -1,0 +1,30 @@
+.container {
+  background-color: aquamarine;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.search {
+  width: 100%;
+  padding: 5px;
+}
+.searchValue {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ab9898;
+  border-radius: 5px;
+}
+.name, .value {
+  line-height: 40px;
+
+}
+.name {
+  width: 30%;
+}
+.value {
+  width: 70%;
+}

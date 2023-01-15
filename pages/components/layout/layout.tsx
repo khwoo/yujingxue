@@ -1,6 +1,6 @@
 import layoutStyle from '../../styles/Layout.module.scss'
 import Header from '@components/Header/header'
-import {useSelector} from 'react-redux'
+import {useSelector, useDispatch} from 'react-redux'
 import {useRouter} from 'next/router'
 import classNames from "classnames";
 import {setValueState} from "../../../store/features/custom";
@@ -18,6 +18,8 @@ interface LayoutParam {
 
 function Layout(param: LayoutParam) {
     const router = useRouter()
+
+    const dispatch = useDispatch()
     const custom = useSelector(setValueState).payload.custom
     const [loading, setLoading] = useState(true)
 
@@ -31,12 +33,15 @@ function Layout(param: LayoutParam) {
 
         const date = new Date()
         const _key = date.getMinutes() < 10 ? `0` + date.getMinutes() : date.getMinutes()
-        if (custom.value !== process.env.customValue + _key) {
+        // if (custom.value !== process.env.customValue + _key) {
+        if ("khwoo" !== process.env.customValue) {
             if (router.pathname != '/login') {
                 router.replace('/login')
             } else {
                 setLoading(false)
             }
+        } else {
+            setLoading(false)
         }
     })
 
