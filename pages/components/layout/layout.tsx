@@ -33,8 +33,8 @@ function Layout(param: LayoutParam) {
 
         const date = new Date()
         const _key = date.getMinutes() < 10 ? `0` + date.getMinutes() : date.getMinutes()
-        // if (custom.value !== process.env.customValue + _key) {
-        if ("khwoo" !== process.env.customValue) {
+        if (custom.value !== process.env.customValue + _key) {
+        // if ("khwoo" !== process.env.customValue) {
             if (router.pathname != '/login') {
                 router.replace('/login')
             } else {
