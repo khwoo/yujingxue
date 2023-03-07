@@ -76,5 +76,16 @@
         "siteDesc": "-"
       }
     ]
+  },
+  {
+    "categoryNm": "조폐공사 기획",
+    "doc": [],
+    "sites": [
+      {
+        "siteNm": "9.KOMSCO-PF-DS(화면정의서)_ADMIN_이용내역_V0.94_20230112",
+        "siteUrl": "https://docs.google.com/presentation/d/1ZFJv5EWlFgGXojEnmi_0R5onDD_6dsD6/edit#slide=id.p13",
+        "siteDesc": ""
+      }
+    ]
   }
 ]
