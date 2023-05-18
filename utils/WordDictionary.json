@@ -10,5 +10,9 @@
   {
     "name": "번호",
     "value": "NO"
+  },
+  {
+    "name": "사이트",
+    "value": "SITE"
   }
 ]
